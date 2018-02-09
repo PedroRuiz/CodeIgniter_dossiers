@@ -108,13 +108,7 @@
           $this->load->view('inc/footer');
           $this->load->view('inc/scaffolding');
     ?>
-    <script>
-      $('#summernote').summernote({
-        placeholder: 'Enter your wonderfull text here',
-        tabsize: 2,
-        height: 100
-      });
-    </script>
+    
     
   </body>
 </html>

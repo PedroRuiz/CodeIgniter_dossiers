@@ -18,7 +18,7 @@ It's is ideal to manages many data in your company.
 ## Installation
 Download or git clone **CodeIgniter_dossiers**, after it, 
 
-- Install @benedmunds/CodeIgniter-Ion-Auth
+- Install @benedmunds/CodeIgniter-Ion-Auth https://github.com/benedmunds/CodeIgniter-Ion-Auth.git
 - copy (or move) to your **CodeIgniter** `application/third_party`
 - copy (or move) `application/third_party/CodeIgniter_dossiers/controllers/Dossiers.php` to **your application folder**
 - copy (or move) `application/third_party/CodeIgniter_dossiers/migrations/004_Install_dossiers.php` to **your migration folder**, tipically `application/migrations`

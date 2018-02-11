@@ -22,7 +22,7 @@
         <h6 class="border-bottom border-gray pb-2 mb-0">Contacts in dossier</h6>
         <?php foreach($contacts as $contact):?>
         <div class="media text-muted pt-3">
-          <img src="<?=base_url($images.$contact['image'])?>" alt="" class="mr-2 rounded" width="32">
+          <img src="<?=base_url("$images{$contact['image']}")?>" alt="" class="mr-2 rounded" width="32">
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" onclick="window.location.href='<?=base_url('contacts/edit/'.$contact['id'].'/contact.html')?>'" style="cursor: pointer" title="Edit: <?=sprintf('%s %s',$contact['first_name'],$contact['last_name'])?>">
             <strong class="d-block text-gray-dark">
             <?=sprintf("%s %s %s %s %s<br>%s%s",

@@ -50,7 +50,9 @@ class Dossiers extends MY_Controller
     function index()
     {
         $data = array(
-            'dossiers'  =>  ($this->ion_auth->is_admin()) ? $this->model->get_dossiers() : $this->model->get_dossiers($this->ion_auth->user()->row()->id),
+            'dossiers'  =>  ($this->ion_auth->is_admin()) ? 
+            					$this->model->get_dossiers() : 
+            					$this->model->get_dossiers($this->ion_auth->user()->row()->id),
             'owner'     =>  sprintf('%s %s',
                                                $this->ion_auth->user()->row()->first_name,
                                                $this->ion_auth->user()->row()->last_name
